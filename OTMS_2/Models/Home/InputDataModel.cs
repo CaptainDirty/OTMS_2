@@ -13,16 +13,16 @@ namespace OTMS_2.Models.Home
 
         //public InputDataModel() { }
         //public InputDataModel(Agregat _agregat, Material _material, Gas _gas) { agregat = _agregat; material = _material; gas = _gas; }
-        public double? CalculationStep { get; set; }
-        public double? Height { get; set; }
-        public double? Diameter { get; set; }
-        public double? Vol_heat_transfer_coeff { get; set; }
-        public double? Speed { get; set; }
-        public double? GasStartTemperature { get; set; }
-        public double? GasHeatCapacity { get; set; }
-        public double? MaterialWaste { get; set; }
-        public double? MaterialStartTemperature { get; set; }
-        public double? MaterialHeatCapacity { get; set; }
+        public double? CalculationStep { get; set; } = 0.5;
+        public double? Height { get; set; } = 4;
+        public double? Diameter { get; set; } = 2.2;
+        public double? Vol_heat_transfer_coeff { get; set; } = 2440;
+        public double? Speed { get; set; } = 0.74;
+        public double? GasStartTemperature { get; set; } = 700;
+        public double? GasHeatCapacity { get; set; } = 1.35;
+        public double? MaterialWaste { get; set; } = 1.68;
+        public double? MaterialStartTemperature { get; set; } = 5;
+        public double? MaterialHeatCapacity { get; set; } = 1.49;
         
         //public static InputDataModel Default
         //{

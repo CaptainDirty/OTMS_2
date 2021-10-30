@@ -2,11 +2,7 @@
 using Microsoft.Extensions.Logging;
 using OTMS_2.Models;
 using OTMS_2.Models.Home;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OTMS_2.Controllers
 {
@@ -32,7 +28,6 @@ namespace OTMS_2.Controllers
         public IActionResult Index()
         {
             var viewModel = new IndexViewModel()/*.GetDefault();*/;
-            viewModel.Input.CalculationStep = 0.5d;
 
             return View(viewModel);
         }
